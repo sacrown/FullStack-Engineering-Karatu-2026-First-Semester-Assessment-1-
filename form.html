@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application & Sign-In Form - Saheed Lawal</title>
+</head>
+<body>
+
+    <!-- Anchor target for top navigation -->
+    <header id="top">
+        <!-- Global Navigation across both pages -->
+        <nav aria-label="Global Navigation">
+            <ul>
+                <li><a href="index.html">Student Profile</a></li>
+                <li><a href="form.html"><strong>Application Form (Current)</strong></a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h1>AltSchool Africa - Application &amp; Portal Authentication Form</h1>
+        <p>Please complete the application form below to register for the School of Engineering, or sign in to your existing account.</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Application Form mirroring AltSchool Portal & Application Process -->
+        <form action="#" method="POST" autocomplete="on">
+
+            <!-- Section 1: Portal Authentication / Account Credentials -->
+            <fieldset>
+                <legend><strong>1. Account Credentials &amp; Portal Sign-In</strong></legend>
+                <p>
+                    <label for="signin-email">Email Address: <abbr title="Required">*</abbr></label><br>
+                    <input type="email" id="signin-email" name="signin-email" placeholder="example@domain.com" required autocomplete="email">
+                </p>
+
+                <p>
+                    <label for="signin-password">Password: <abbr title="Required">*</abbr></label><br>
+                    <input type="password" id="signin-password" name="signin-password" placeholder="Enter secure password" required minlength="8" autocomplete="current-password">
+                </p>
+
+                <p>
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me on this browser</label>
+                </p>
+
+                <p>
+                    <a href="#forgot-password" id="forgot-password">Forgot your password?</a>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- Section 2: Personal Information -->
+            <fieldset>
+                <legend><strong>2. Personal Information</strong></legend>
+
+                <p>
+                    <label for="first-name">First Name: <abbr title="Required">*</abbr></label><br>
+                    <input type="text" id="first-name" name="first-name" placeholder="Saheed" required autocomplete="given-name">
+                </p>
+
+                <p>
+                    <label for="last-name">Last Name: <abbr title="Required">*</abbr></label><br>
+                    <input type="text" id="last-name" name="last-name" placeholder="Lawal" required autocomplete="family-name">
+                </p>
+
+                <p>
+                    <label for="phone-number">Phone Number: <abbr title="Required">*</abbr></label><br>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="+234 800 000 0000" required autocomplete="tel">
+                </p>
+
+                <p>
+                    <label for="dob">Date of Birth: <abbr title="Required">*</abbr></label><br>
+                    <input type="date" id="dob" name="dob" required>
+                </p>
+
+                <fieldset>
+                    <legend>Gender: <abbr title="Required">*</abbr></legend>
+                    <input type="radio" id="gender-male" name="gender" value="male" required>
+                    <label for="gender-male">Male</label>
+
+                    <input type="radio" id="gender-female" name="gender" value="female">
+                    <label for="gender-female">Female</label>
+
+                    <input type="radio" id="gender-other" name="gender" value="other">
+                    <label for="gender-other">Other / Prefer not to say</label>
+                </fieldset>
+            </fieldset>
+
+            <br>
+
+            <!-- Section 3: Geographical Location -->
+            <fieldset>
+                <legend><strong>3. Location &amp; Residence</strong></legend>
+
+                <p>
+                    <label for="country">Country of Residence: <abbr title="Required">*</abbr></label><br>
+                    <select id="country" name="country" required autocomplete="country-name">
+                        <option value="">-- Please Select Your Country --</option>
+                        <option value="NG" selected>Nigeria</option>
+                        <option value="GH">Ghana</option>
+                        <option value="KE">Kenya</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="OTHER">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="state">State / Province / City: <abbr title="Required">*</abbr></label><br>
+                    <input type="text" id="state" name="state" placeholder="Lagos" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- Section 4: Educational & Professional Background -->
+            <fieldset>
+                <legend><strong>4. Educational &amp; Professional Background</strong></legend>
+
+                <p>
+                    <label for="education">Highest Level of Education: <abbr title="Required">*</abbr></label><br>
+                    <select id="education" name="education" required>
+                        <option value="">-- Select Highest Qualification --</option>
+                        <option value="high-school">High School / Secondary Diploma</option>
+                        <option value="ond-hnd">OND / HND</option>
+                        <option value="bachelors" selected>Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                        <option value="phd">Doctorate (PhD)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="current-employment">Current Employment Status: <abbr title="Required">*</abbr></label><br>
+                    <select id="current-employment" name="current-employment" required>
+                        <option value="">-- Select Employment Status --</option>
+                        <option value="employed-full-time" selected>Employed (Full-Time)</option>
+                        <option value="employed-part-time">Employed (Part-Time)</option>
+                        <option value="self-employed">Self-Employed / Freelancer</option>
+                        <option value="unemployed">Currently Seeking Opportunities</option>
+                        <option value="student">Student</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- Section 5: Program & Track Details -->
+            <fieldset>
+                <legend><strong>5. Program &amp; Track Selection</strong></legend>
+
+                <p>
+                    <label for="school">School: <abbr title="Required">*</abbr></label><br>
+                    <select id="school" name="school" required>
+                        <option value="soe" selected>School of Engineering</option>
+                        <option value="sod">School of Data</option>
+                        <option value="sop">School of Product</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="learning-track">Specialized Learning Track: <abbr title="Required">*</abbr></label><br>
+                    <select id="learning-track" name="learning-track" required>
+                        <option value="ai-fullstack" selected>AI Full-Stack Software Engineering</option>
+                        <option value="frontend">Frontend Engineering</option>
+                        <option value="backend">Backend Engineering</option>
+                        <option value="cloud">Cloud Engineering</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="referral">How did you hear about AltSchool Africa?</label><br>
+                    <select id="referral" name="referral">
+                        <option value="">-- Select Referral Source --</option>
+                        <option value="twitter">X (Twitter)</option>
+                        <option value="linkedin" selected>LinkedIn</option>
+                        <option value="friend">Friend / Colleague</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="slack">Slack / Developer Community</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- Section 6: Terms and Submission -->
+            <fieldset>
+                <legend><strong>6. Terms &amp; Confirmation</strong></legend>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I confirm that all information provided is accurate and I agree to AltSchool Africa's Terms of Service and Privacy Policy. <abbr title="Required">*</abbr></label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Application</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </fieldset>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <!-- Accessible Footer with Address and Copyright -->
+    <footer>
+        <address>
+            Created by: <a href="mailto:saheed.lawal@example.com">Saheed Adeolu Lawal</a><br>
+            Student ID: ALT/SOE/KAR/026/0591<br>
+            AltSchool Africa - School of Engineering<br>
+            Lagos, Nigeria
+        </address>
+        <p>&copy; 2026 Saheed Lawal | AltSchool Africa - School of Engineering. All rights reserved.</p>
+        <p><a href="#top">Back to Top &uarr;</a></p>
+    </footer>
+
+</body>
+</html>
